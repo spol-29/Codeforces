@@ -1,15 +1,16 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
 	int k,n,w;
-	long long total = 0;
-	cin >> k >> n >> w;
-	for(int i = 1; i <= w; i++){
-		total = total+(i*k);
-	}
-	if(n >= total){
-		cout << 0;
-	}else{
-		cout << total - n;
-	}
-} 
+    int sum = 0;
+    cin >> k >> n >> w;
+    for(int i = 2; i <= w; i++){
+        sum += k * i;
+    }	
+    sum += k;
+    if(sum > n){
+        cout << sum - n << endl;
+    }else{
+        cout << 0 << endl;
+    }
+}

@@ -7,9 +7,7 @@ int main(){
 		cin >> f;
 		if(f > h){
 			total+=2;
-		}else if(f < h){
-			total++;
-		}else if(f == h){
+		}else if(f < h || f == h){
 			total++;
 		}
 	}

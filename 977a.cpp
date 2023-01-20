@@ -1,16 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int n,k,m;
-	cin >> n >> k;
-	for(int i = 1; i <= k; i++){
-		m=n%10;
-		if(m != 0){
-			n-=1;
-		}
-		if(m == 0){
-			n/=10;
-		}
-	}
-	cout << n;
+	int x,y;
+    cin >> x >> y;
+    while(y--){
+        if(x % 10 != 0){
+            x -= 1;
+        }else if(x % 10 == 0){
+            x /= 10;
+        }
+    }
+    cout << x;
 }
