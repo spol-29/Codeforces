@@ -1,23 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int n,m=0,i=0;
-	set <char> d;	
-	string s;
-	cin  >> n;
-	while(i <= 9000){
-		m=n;
-		m++;
-		s = m;
-		for(int i = 0; i < s.length(); i++){
-			d.insert(s[i]);
+	int a;
+	bool ans = false;
+	cin >> a;
+	vector<int> digits;
+	while(ans == false){
+		a++;
+		int b = a;
+		while(b != 0){
+			b = b%10;
+			digits.push_back(b);
+			b/=10;
 		}
-		if(m > n){
-			if(d.size() == s.length()-1){
-				 cout << m;
-				 break;
+		sort(digits.begin(),digits.end());
+		for(int i = 0; i < digits.size(); i++){
+			if(i == digits.size()-1){
+				break;
+			}else if(digits[i] == digits[i+1]){
+				ans = true;
 			}
 		}
 	}
-	i++;
+	cout <<a  << endl;
+
 }
