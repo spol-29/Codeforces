@@ -1,16 +1,21 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-
-int main()
-{
-    int asdfn,x,c=0;
-    cin >> n;
-    for(int iasdf = 1; i <= n; i++){
-        cin >> x;
-        if(x == 1){
-            c++;
-    }
-}
-if(c > 0) cout << "hard";
-eladsfse cout  << "easy";
+int main(){
+	int a;
+	bool ans = true;
+	cin >> a;
+	while(a--){
+		int a;
+		cin >> a;
+		if(a == 1){
+			ans = false;
+			cout << "Hard" << endl;
+			break;
+		}else{
+			continue;
+		}
+	}
+	if(ans == true){
+		cout << "Easy" << endl;
+	}
 }

@@ -1,21 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int n,p,curr,num;
-	vector<int>g;
-	cin >> n;
-	vector<int>sorted[n];
-	for(int i = 1; i <= n; i++){
-		cin >> p;
-		g.push_back(p);
+	int a,b;
+	cin >> a;
+	b = a;
+	vector<int> num;
+	vector<int> ans;
+	while(a--){
+		int b;
+		cin >> b;
+		num.push_back(b);
 	}
-	for(int j = 0; j <= g.size()-1; j++){
-		curr = g[j];
-		num = g[curr];
-		sorted[num] = g[j];
+	a = b;
+	for(int i = 0; i < num.size(); i++){
+		ans[num[num[i-1]]-1]=num[i];
 	}
-	for(int m = 0; m <= sorted.size()-1; m++){
-		cout << sorted[m];
+	for(int i = 0; i < ans.size(); i++){
+		cout << ans[i] << " " << endl;
 	}
-
 }

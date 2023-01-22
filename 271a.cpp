@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int a;
+int a,count = 0;
 	bool ans = false;
 	cin >> a;
 	vector<int> digits;
@@ -17,11 +17,19 @@ int main(){
 		for(int i = 0; i < digits.size(); i++){
 			if(i == digits.size()-1){
 				break;
-			}else if(digits[i] == digits[i+1]){
-				ans = true;
+			}else{
+				if(digits[i] != digits[i]+1){
+						count ++;
+				}
+				if(count == digits.size()-1){
+					ans = true;
+					break;
+				}else{
+					continue;
+				}
 			}
 		}
 	}
-	cout <<a  << endl;
+	cout << a << endl;
 
 }
