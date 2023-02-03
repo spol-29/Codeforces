@@ -6,7 +6,10 @@ int main(){
 	cin >> s;
 	cin >> a;
 	for(int i = 0; i <= s.length()-1; i++){
-		if(s[i] == a[i]) cout << 0;
-		else cout << 1;
+		if(s[i] == a[i]){
+			cout << 0;
+		}else{
+			cout << 1;
+		}
 	}
 }
