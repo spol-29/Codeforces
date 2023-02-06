@@ -1,16 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int n,t,c=0,l;
-	cin >> l;
-	while(l--){
-		cin >> n >> t;
-		while(n%t != 0){
-			n++;
-			c++;
-		}
-		cout << c << endl;
+	int n,a,b;
+	cin >> n;
+	while(n--){
+		cin >> a >> b;
+		if(a % b == 0) cout << 0 << endl;
+		else cout << b - a % b << endl;
 	}
-	n=0; c=0;
 }
 
