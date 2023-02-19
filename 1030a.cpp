@@ -19,3 +19,4 @@ int main(){
 		cout << "Easy" << endl;
 	}
 }
+
