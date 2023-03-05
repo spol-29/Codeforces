@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int x,y;
+	int x = 5,y = 7;
     cin >> x >> y;
     while(y--){
         if(x % 10 != 0){
