@@ -15,8 +15,7 @@ int main(){
 			continue;
 		}
 	}
-	if(ans == true){
+	if(ans ==true){
 		cout << "Easy" << endl;
 	}
 }
-
