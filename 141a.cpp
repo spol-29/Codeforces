@@ -1,10 +1,20 @@
-#include<bits/stdc++.h>
+#include <algorithm>
+#include <iostream>
 using namespace std;
-int main(){
-	cin >> a;
-	for (int i = 0; i < a; i++){
-		if(i%2==0){
-			
-		}
-	}
-} 	
+
+int main()
+{
+    string a, b, c, s;
+    cin >> a >> b >> c;
+
+    s = a + b;
+
+    sort(s.begin(), s.end());
+    sort(c.begin(), c.end());
+
+    if(s == c)
+        cout << "YES" << endl;
+    else
+        cout << "NO" << endl;
+    return 0;
+}
